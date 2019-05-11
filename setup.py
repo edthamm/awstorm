@@ -41,7 +41,8 @@ setup(
         ],
         "awstorm": [
             "cfn_list_local = awstorm.cfn.list:Local",
-            "cfn_list_remote = awstorm.cfn.list:Remote"
+            "cfn_list_remote = awstorm.cfn.list:Remote",
+            "init = awstorm.init:Initialize"
         ]
     },
 

@@ -3,6 +3,7 @@ import boto3
 
 from cliff.app import App
 from cliff.commandmanager import CommandManager
+from colorama import init
 
 
 class Awstorm(App):
@@ -15,8 +16,9 @@ class Awstorm(App):
         )
 
     def initialize_app(self, argv):
-        self.boto = boto3
         self.LOG.debug('initialize_app')
+        self.boto = boto3
+        init()
 
 
 def main(argv=sys.argv[1:]):
