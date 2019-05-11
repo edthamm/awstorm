@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 PROJECT = "awstorm"
 VERSION = "0.0.1"
@@ -35,7 +35,17 @@ setup(
 
     install_requires=['cliff', 'boto3'],
 
-    packages=["awstorm"],
+    entry_points={
+        "console_scripts": [
+            "storm = awstorm.storm:main"
+        ],
+        "awstorm": [
+            "cfn_list_local = awstorm.cfn.list:Local",
+            "cfn_list_remote = awstorm.cfn.list:Remote"
+        ]
+    },
+
+    packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
 )
