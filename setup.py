@@ -2,7 +2,7 @@ import pathlib
 from setuptools import setup, find_packages
 
 PROJECT = "awstorm"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 try:
     HERE = pathlib.Path(__file__).parent

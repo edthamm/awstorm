@@ -9,7 +9,7 @@ class Awstorm(App):
     def __init__(self):
         super(Awstorm, self).__init__(
             description='A better cloudformation experience',
-            version='0.0.1',
+            version='0.0.2',
             deferred_help=True,
             command_manager=CommandManager('awstorm')
         )
