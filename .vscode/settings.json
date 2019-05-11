@@ -2,5 +2,6 @@
     "cSpell.words": [
         "awstorm"
     ],
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true
 }
